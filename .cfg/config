@@ -1,0 +1,8 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = true
+[remote "origin"]
+	url = https://github.com/Almighty42/Nordic-Arch-Dotfiles.git
+[status]
+	showUntrackedFiles = no

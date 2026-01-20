@@ -1,0 +1,16 @@
+# Automount USBs, microSDs y otros dispositivos
+automount: true
+automount_options:
+  - uid=$UID      # propietario = tu usuario
+  - gid=$GID      # grupo = tu grupo
+  - dmask=027     # permisos para directorios
+  - fmask=137     # permisos para archivos
+
+# Carpeta base para montar
+mount_opts:
+  base: /media/$USER
+  fs_type:
+    exfat: "uid=$UID,gid=$GID,fmask=137,dmask=027"
+    vfat: "uid=$UID,gid=$GID,fmask=137,dmask=027"
+    ntfs: "uid=$UID,gid=$GID,fmask=137,dmask=027"
+    ext4: "uid=$UID,gid=$GID"
